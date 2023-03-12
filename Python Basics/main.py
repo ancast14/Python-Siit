@@ -1,15 +1,8 @@
-a = 5
-print("id(a)",id(a))
-a = a+5
-print("id(a)",id(a))
+def f(n):
+    if n > 0:
+        prev = f(n - 1)
+        print(prev)
+    return[n]
 
-a = 3
-b = a
-a = 5
-c=3
-
-print (b is a)
-
-my_set = {a, b, "3"}
-my_set.pop()
-print(my_set)
+l = f(5)
+print(l)
