@@ -28,6 +28,6 @@ print(my_list_odds)
 
 #afișează o listă ce conține numerele ce sunt multipli ai numărului 3 (folosind slice)
 
-my_list_div3 = list(filter(lambda x: (x % 3 == 0), my_list))
+my_list_div3 = my_list_sort[2::3]
 print(my_list_div3)
 print(my_list)

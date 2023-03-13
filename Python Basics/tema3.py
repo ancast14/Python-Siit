@@ -36,14 +36,13 @@ print(get_sum(8))
 #sa se scrie o functie care citeste de la tastatura si returneaza valoarea daca aceasta este un numar intreg, altfel returneaza valoarea 0
 
 def show_int_num():
-     while True:
-         try:
-             a = int(input("a = "))
-             print(a)
-         except ValueError:
-            print(0)
+    try:
+        a = int(input("a = "))
+    except ValueError:
+        a = 0
+        return a
+    print(a)
 
 show_int_num()
-
-
+print(show_int_num())
 
