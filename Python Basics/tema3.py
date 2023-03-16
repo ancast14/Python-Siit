@@ -6,12 +6,26 @@ def sum_of_nums(*args, **kwargs):
     for num in args:
         if type(num) == int or type(num) == float:
             total += num
+        elif isinstance(num, (list, tuple, set)):
+            total += sum_of_nums(*num)
+    for value in kwargs.values():
+        if isinstance(value, (int, float)):
+            total += value
+        elif isinstance(value, (list, tuple, set)):
+            total += sum_of_nums(*value)
     return total
 
 print(sum_of_nums(1, 5, -3, "abc", [12, 56, "cad"]))
+print(sum_of_nums(1, 5, -3, "abc", [12, 56, [1, 2], "cad"]))
+print(sum_of_nums(1, 5, -3, "abc", [12, 56, [1, 2, {3, 4}], "cad"]))
 print(sum_of_nums())
 print(sum_of_nums(2, 4, "abc", param_1=2))
+print(sum_of_nums(2, 4, "abc", param_1=2, param_2="abc"))
+print(sum_of_nums(2, 4, "abc", param_1=2, param_2="abc", param_3=2.5))
+print(sum_of_nums(2, 4, "abc", param_1=2, param_2="abc", param_3=2.5, param_4=[1, (2, {3,4})]))
 print(sum_of_nums(3, 5.8, "aaa"))
+
+
 
 #sa se scrie o functie recursiva care primeste ca parametru un numar intreg si returneaza:
     #suma tuturor numerelor de la [0, n]
@@ -38,11 +52,11 @@ print(get_sum(8))
 def show_int_num():
     try:
         a = int(input("a = "))
+        print(a)
     except ValueError:
         a = 0
+        print(a)
         return a
-    print(a)
 
 show_int_num()
-print(show_int_num())
 
