@@ -5,9 +5,7 @@ while True:
         age = int(input("Age: "))
 
     except ValueError:
-
-        if ValueError:
-            a += 1
+        a += 1
 
         if a > 2:
             print("Out of tries!")

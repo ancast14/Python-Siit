@@ -34,15 +34,15 @@ print(sum_of_nums(3, 5.8, "aaa"))
 
 def get_sum(n):
     if n == 0:
-        return (0, 0, 0)
+        return 0, 0, 0
+
+    total_sum, even_sum, odd_sum = get_sum(n-1)
+    sum_of_all = n+ total_sum
+    if n % 2 == 0:
+        even_sum += n
     else:
-        total_sum, even_sum, odd_sum = get_sum(n-1)
-        sum_of_all = n+ total_sum
-        if n % 2 == 0:
-            even_sum += n
-        else:
-            odd_sum += n
-        return(sum_of_all, even_sum, odd_sum)
+        odd_sum += n
+    return(sum_of_all, even_sum, odd_sum)
 
 print(get_sum(7))
 print(get_sum(8))
@@ -53,6 +53,7 @@ def show_int_num():
     try:
         a = int(input("a = "))
         print(a)
+        return a
     except ValueError:
         a = 0
         print(a)
