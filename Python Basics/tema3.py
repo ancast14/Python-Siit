@@ -54,8 +54,7 @@ def show_int_num():
         a = int(input("a = "))
     except ValueError:
         a = 0
-    print(a)
     return a
 
-show_int_num()
+print(show_int_num())
 
