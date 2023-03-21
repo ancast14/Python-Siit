@@ -50,10 +50,11 @@ print(get_sum(8))
 #sa se scrie o functie care citeste de la tastatura si returneaza valoarea daca aceasta este un numar intreg, altfel returneaza valoarea 0
 
 def show_int_num():
+    a = 0
     try:
         a = int(input("a = "))
     except ValueError:
-        a = 0
+        pass
     return a
 
 print(show_int_num())
