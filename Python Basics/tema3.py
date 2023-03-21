@@ -52,12 +52,10 @@ print(get_sum(8))
 def show_int_num():
     try:
         a = int(input("a = "))
-        print(a)
-        return a
     except ValueError:
         a = 0
-        print(a)
-        return a
+    print(a)
+    return a
 
 show_int_num()
 
