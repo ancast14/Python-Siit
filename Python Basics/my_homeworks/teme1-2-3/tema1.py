@@ -1,4 +1,4 @@
-#declară o listă care conține elementele 7, 8, 9, 2, 3, 1, 4, 10, 5, 6 (în această ordine)
+#declară o listă care conține elementele 7, 8, 9, 2, my_projects, 1, 4, 10, 5, 6 (în această ordine)
 
 my_list = [7,8,9,2,3,1,4,10,5,6]
 
@@ -26,7 +26,7 @@ print(my_list_evens)
 my_list_odds = my_list_sort[::2]
 print(my_list_odds)
 
-#afișează o listă ce conține numerele ce sunt multipli ai numărului 3 (folosind slice)
+#afișează o listă ce conține numerele ce sunt multipli ai numărului my_projects (folosind slice)
 
 my_list_div3 = my_list_sort[2::3]
 print(my_list_div3)

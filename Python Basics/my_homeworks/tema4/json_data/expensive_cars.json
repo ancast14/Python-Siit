@@ -1,0 +1,23 @@
+[
+    {
+        "Brand": "Mazda",
+        "Model": "CX-60",
+        "Hp": "327",
+        "Price": "8956",
+        "ID": 6
+    },
+    {
+        "Brand": "Seat",
+        "Model": "Ateca",
+        "Hp": "296",
+        "Price": "7021",
+        "ID": 1
+    },
+    {
+        "Brand": "BMW",
+        "Model": "X5",
+        "Hp": "625",
+        "Price": "10890",
+        "ID": 2
+    }
+]
