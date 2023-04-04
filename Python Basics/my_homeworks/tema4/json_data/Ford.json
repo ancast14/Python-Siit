@@ -1,0 +1,14 @@
+[
+    {
+        "Brand": "Ford",
+        "Model": "Focus",
+        "Hp": "115",
+        "Price": "1000"
+    },
+    {
+        "Brand": "Ford",
+        "Model": "Fiesta",
+        "Hp": "163",
+        "Price": "1513"
+    }
+]

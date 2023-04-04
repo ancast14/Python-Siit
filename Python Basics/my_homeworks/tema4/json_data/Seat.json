@@ -1,0 +1,14 @@
+[
+    {
+        "Brand": "Seat",
+        "Model": "Ibiza",
+        "Hp": "140",
+        "Price": "1760"
+    },
+    {
+        "Brand": "Seat",
+        "Model": "Ateca",
+        "Hp": "296",
+        "Price": "7021"
+    }
+]
