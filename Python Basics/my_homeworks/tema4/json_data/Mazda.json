@@ -3,18 +3,21 @@
         "Brand": "Mazda",
         "Model": "CX-60",
         "Hp": "327",
-        "Price": "8956"
+        "Price": "8956",
+        "ID": "99573d12-9806-4a59-a2eb-de48c78412c6"
     },
     {
         "Brand": "Mazda",
         "Model": "CX-5",
         "Hp": "187",
-        "Price": "4563"
+        "Price": "4563",
+        "ID": "708e8484-ed97-4f7d-9bbd-de06be7dbb3d"
     },
     {
         "Brand": "Mazda",
         "Model": "MX-30",
         "Hp": "143",
-        "Price": "999"
+        "Price": "999",
+        "ID": "317c3771-06a5-426f-b1b6-2a8d4531cb68"
     }
 ]

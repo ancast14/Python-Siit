@@ -3,12 +3,14 @@
         "Brand": "Seat",
         "Model": "Ibiza",
         "Hp": "140",
-        "Price": "1760"
+        "Price": "1760",
+        "ID": "88965e5b-308b-4fb9-9567-abd8bc82dbc6"
     },
     {
         "Brand": "Seat",
         "Model": "Ateca",
         "Hp": "296",
-        "Price": "7021"
+        "Price": "7021",
+        "ID": "c89c5785-dc24-4c1b-8fea-0fb173d71977"
     }
 ]

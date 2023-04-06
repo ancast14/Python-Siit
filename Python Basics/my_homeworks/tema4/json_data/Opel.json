@@ -3,12 +3,14 @@
         "Brand": "Opel",
         "Model": "Corsa",
         "Hp": "55",
-        "Price": "596"
+        "Price": "596",
+        "ID": "8bd833d9-c190-4e0f-af7b-89b34cc4e9ad"
     },
     {
         "Brand": "Opel",
         "Model": "Mokka",
         "Hp": "113",
-        "Price": "890"
+        "Price": "890",
+        "ID": "237f6b6c-be07-419e-b91d-a13b4d820578"
     }
 ]
