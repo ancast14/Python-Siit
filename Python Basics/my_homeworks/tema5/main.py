@@ -3,8 +3,17 @@ class Fraction:
         self._numerator = numerator
         self._denominator = denominator
 
+    # def simplifier(self):
+    #     self.
+
     def __str__(self):
-        return f"{self._numerator} / {self._denominator}"
+        if self._numerator == 0:
+            return "Are you sure you want to divide zero by this denominator?"
+        if self._denominator == 0:
+            return "You cannot divide by zero."
+        else:
+            return f"{self._numerator} / {self._denominator}"
+
 
     @property
     def numerator(self):
@@ -29,7 +38,7 @@ class Fraction:
 
 
 if __name__ == '__main__':
-    fraction1 = Fraction(1, 2)
+    fraction1 = Fraction(0, 2)
     fraction2 = Fraction(3, 4)
     print(fraction1)
     print(fraction2)
