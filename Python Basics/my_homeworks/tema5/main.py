@@ -1,9 +1,9 @@
 class Fraction:
     def __init__(self, numerator, denominator):
-        self.__numerator = numerator
-        self.__denominator = denominator
         if denominator == 0:
             raise ZeroDivisionError
+        self.__numerator = numerator
+        self.__denominator = denominator
         self.__simplify()
 
     def __simplify(self):
