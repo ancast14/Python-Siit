@@ -2,11 +2,11 @@ class Fraction:
     def __init__(self, numerator, denominator):
         self.__numerator = numerator
         self.__denominator = denominator
-        if numerator == 0 or denominator == 0:
+        if denominator == 0:
             raise ZeroDivisionError
-        self.simplify()
+        self.__simplify()
 
-    def simplify(self):
+    def __simplify(self):
         gcd = self.__gcd(self.__numerator, self.__denominator)
         self.__numerator //= gcd
         self.__denominator //= gcd
@@ -14,12 +14,10 @@ class Fraction:
     def __gcd(self, a, b):
         if b == 0:
             return a
-        else:
-            return self.__gcd(b, a % b)
+        return self.__gcd(b, a % b)
 
     def __str__(self):
         return f"{self.__numerator} / {self.__denominator}"
-
 
     @property
     def numerator(self):
